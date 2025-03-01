@@ -1,0 +1,205 @@
+{
+  "memorials": [
+    {
+      "id": "mem_001",
+      "name": "John Doe",
+      "tributeMessage": "Un père et un ami exceptionnel. Toujours dans nos cœurs.",
+      "createdBy": "usr_001",
+      "birthdate": "1960-04-10",
+      "deathdate": "2023-07-25",
+      "visibility": "public",
+      "familyLinks": ["usr_002", "usr_003"],
+      "tributes": [
+        {
+          "id": "trb_001",
+          "userId": "usr_004",
+          "message": "Repose en paix, John. Tu nous manques.",
+          "date": "2024-03-01"
+        },
+        {
+          "id": "trb_002",
+          "userId": "usr_005",
+          "message": "Un homme formidable, tu nous manques terriblement.",
+          "date": "2024-03-10"
+        }
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://wanted.com/memorials/john_doe.jpg"
+        },
+        {
+          "type": "image",
+          "url": "https://wanted.com/memorial/john_doe_banner.jpg"
+        }
+      ],
+      "documents": [
+        "https://wanted.com/memorials/john_doe_bio.pdf"
+      ],
+      "hashtags": ["#hommage", "#souvenir"],
+      "participants": ["usr_006", "usr_007"]
+    },
+    {
+      "id": "mem_002",
+      "name": "Marie Curie",
+      "tributeMessage": "Une pionnière de la science qui a changé le monde.",
+      "createdBy": "usr_008",
+      "birthdate": "1867-11-07",
+      "deathdate": "1934-07-04",
+      "visibility": "public",
+      "familyLinks": ["usr_009"],
+      "tributes": [
+        {
+          "id": "trb_003",
+          "userId": "usr_010",
+          "message": "Merci pour vos découvertes révolutionnaires.",
+          "date": "2024-03-05"
+        }
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://wanted.com/memorials/marie_curie.jpg"
+        }
+      ],
+      "documents": [],
+      "hashtags": ["#science", "#pionniere"],
+      "participants": ["usr_011", "usr_012"]
+    },
+    {
+      "id": "mem_003",
+      "name": "Alan Turing",
+      "tributeMessage": "Un génie méconnu, père de l'informatique moderne.",
+      "createdBy": "usr_013",
+      "birthdate": "1912-06-23",
+      "deathdate": "1954-06-07",
+      "visibility": "public",
+      "familyLinks": [],
+      "tributes": [
+        {
+          "id": "trb_004",
+          "userId": "usr_014",
+          "message": "Votre travail a changé le monde. Merci Alan.",
+          "date": "2024-02-15"
+        }
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://wanted.com/memorials/alan_turing.jpg"
+        }
+      ],
+      "documents": ["https://wanted.com/memorials/alan_turing_legacy.pdf"],
+      "hashtags": ["#informatique", "#cryptographie"],
+      "participants": ["usr_015"]
+    },
+    {
+      "id": "mem_004",
+      "name": "Nelson Mandela",
+      "tributeMessage": "Un leader qui a apporté la paix et l’unité en Afrique du Sud.",
+      "createdBy": "usr_016",
+      "birthdate": "1918-07-18",
+      "deathdate": "2013-12-05",
+      "visibility": "public",
+      "familyLinks": [],
+      "tributes": [
+        {
+          "id": "trb_005",
+          "userId": "usr_017",
+          "message": "Votre combat pour la liberté ne sera jamais oublié.",
+          "date": "2024-07-18"
+        }
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://wanted.com/memorials/mandela.jpg"
+        }
+      ],
+      "documents": [],
+      "hashtags": ["#liberté", "#égalité"],
+      "participants": ["usr_018"]
+    },
+    {
+      "id": "mem_005",
+      "name": "Albert Einstein",
+      "tributeMessage": "Un génie dont les découvertes influencent encore notre monde.",
+      "createdBy": "usr_019",
+      "birthdate": "1879-03-14",
+      "deathdate": "1955-04-18",
+      "visibility": "public",
+      "familyLinks": [],
+      "tributes": [
+        {
+          "id": "trb_006",
+          "userId": "usr_020",
+          "message": "Votre intelligence est une inspiration éternelle.",
+          "date": "2024-12-01"
+        }
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://wanted.com/memorials/einstein.jpg"
+        }
+      ],
+      "documents": ["https://wanted.com/memorials/einstein_research.pdf"],
+      "hashtags": ["#physique", "#relativité"],
+      "participants": ["usr_021"]
+    },
+    {
+      "id": "mem_006",
+      "name": "Rosa Parks",
+      "tributeMessage": "Une femme courageuse qui a marqué l’histoire des droits civiques.",
+      "createdBy": "usr_022",
+      "birthdate": "1913-02-04",
+      "deathdate": "2005-10-24",
+      "visibility": "public",
+      "familyLinks": [],
+      "tributes": [
+        {
+          "id": "trb_007",
+          "userId": "usr_023",
+          "message": "Merci pour votre courage et votre détermination.",
+          "date": "2024-02-04"
+        }
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://wanted.com/memorials/rosa_parks.jpg"
+        }
+      ],
+      "documents": [],
+      "hashtags": ["#droits_civiques", "#égalité"],
+      "participants": ["usr_024"]
+    },
+    {
+      "id": "mem_007",
+      "name": "Martin Luther King Jr.",
+      "tributeMessage": "Un homme qui a rêvé d’un monde meilleur.",
+      "createdBy": "usr_025",
+      "birthdate": "1929-01-15",
+      "deathdate": "1968-04-04",
+      "visibility": "public",
+      "familyLinks": [],
+      "tributes": [
+        {
+          "id": "trb_008",
+          "userId": "usr_026",
+          "message": "Nous continuons votre combat pour l’égalité.",
+          "date": "2024-01-15"
+        }
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://wanted.com/memorials/mlk.jpg"
+        }
+      ],
+      "documents": [],
+      "hashtags": ["#rêve", "#justice"],
+      "participants": ["usr_027"]
+    }
+  ]
+}

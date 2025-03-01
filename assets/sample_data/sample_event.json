@@ -1,0 +1,227 @@
+{
+  "events": [
+    {
+      "id": "evt_001",
+      "title": "Marche pour la paix",
+      "description": "Rassemblement en mémoire des victimes de la guerre.",
+      "type": "event",
+      "date": "2024-03-01",
+      "createdBy": "usr_001",
+      "participants": ["usr_002", "usr_003"],
+      "location": "Paris, France",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://wanted.com/events/marche_paix.jpg"
+        }
+      ],
+      "comments": ["C'est un événement important !", "J'y participerai"],
+      "reactions": {
+        "like": 2500,
+        "support": 1200
+      },
+      "visibility": "public",
+      "status": "active",
+      "hashtags": ["#paix", "#marche", "#solidarité"],
+      "documents": ["https://wanted.com/docs/marche_paix.pdf"],
+      "tags": ["usr_005", "usr_010"],
+      "linkedLiveSessions": ["live_001"]
+    },
+    {
+      "id": "evt_002",
+      "title": "",
+      "description": "Juste une pensée pour ceux qui nous ont quittés...",
+      "type": "post",
+      "date": "2024-02-28",
+      "createdBy": "usr_002",
+      "participants": [],
+      "location": "",
+      "media": [],
+      "comments": ["Repose en paix", "Tu nous manques"],
+      "reactions": {
+        "like": 5000,
+        "support": 3000
+      },
+      "visibility": "public",
+      "status": "active",
+      "hashtags": ["#souvenir", "#hommage"],
+      "documents": [],
+      "tags": [],
+      "linkedLiveSessions": []
+    },
+    {
+      "id": "evt_003",
+      "title": "Anniversaire de John Doe",
+      "description": "Célébration en mémoire de John.",
+      "type": "event",
+      "date": "2024-04-15",
+      "createdBy": "usr_003",
+      "participants": ["usr_004", "usr_005"],
+      "location": "New York, USA",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://wanted.com/events/anniversaire_john.mp4"
+        }
+      ],
+      "comments": ["Joyeux anniversaire en mémoire de John", "Une belle initiative"],
+      "reactions": {
+        "like": 3200,
+        "support": 2100
+      },
+      "visibility": "private",
+      "status": "scheduled",
+      "hashtags": ["#anniversaire", "#mémoire"],
+      "documents": ["https://wanted.com/docs/john_anniversaire.pdf"],
+      "tags": ["usr_007"],
+      "linkedLiveSessions": ["live_002"]
+    },
+    {
+      "id": "evt_004",
+      "title": "Conférence IA et Éthique",
+      "description": "Discussion sur l'éthique dans l'intelligence artificielle.",
+      "type": "event",
+      "date": "2024-06-10",
+      "createdBy": "usr_006",
+      "participants": ["usr_008", "usr_009"],
+      "location": "San Francisco, USA",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://wanted.com/events/ia_ethique.jpg"
+        }
+      ],
+      "comments": ["Sujet crucial !", "J'ai hâte d'y assister"],
+      "reactions": {
+        "like": 1500,
+        "support": 800
+      },
+      "visibility": "public",
+      "status": "active",
+      "hashtags": ["#IA", "#éthique", "#avenir"],
+      "documents": ["https://wanted.com/docs/ia_ethique.pdf"],
+      "tags": ["usr_012"],
+      "linkedLiveSessions": []
+    },
+    {
+      "id": "evt_005",
+      "title": "Levée de fonds pour la recherche",
+      "description": "Événement caritatif pour financer la recherche médicale.",
+      "type": "event",
+      "date": "2024-05-20",
+      "createdBy": "usr_010",
+      "participants": ["usr_011", "usr_012"],
+      "location": "Berlin, Allemagne",
+      "media": [],
+      "comments": ["Je vais faire un don", "Excellente initiative !"],
+      "reactions": {
+        "like": 4200,
+        "support": 3100
+      },
+      "visibility": "public",
+      "status": "active",
+      "hashtags": ["#recherche", "#solidarité"],
+      "documents": [],
+      "tags": ["usr_013"],
+      "linkedLiveSessions": ["live_003"]
+    },
+    {
+      "id": "evt_006",
+      "title": "Concert hommage à Freddie Mercury",
+      "description": "Concert en l'honneur de Freddie Mercury avec des artistes invités.",
+      "type": "event",
+      "date": "2024-07-15",
+      "createdBy": "usr_014",
+      "participants": ["usr_015", "usr_016"],
+      "location": "Londres, Royaume-Uni",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://wanted.com/events/freddie_concert.mp4"
+        }
+      ],
+      "comments": ["Freddie forever !", "Je ne vais pas rater ça !"],
+      "reactions": {
+        "like": 6700,
+        "support": 5000
+      },
+      "visibility": "public",
+      "status": "scheduled",
+      "hashtags": ["#musique", "#hommage"],
+      "documents": [],
+      "tags": ["usr_017"],
+      "linkedLiveSessions": ["live_004"]
+    },
+    {
+      "id": "evt_007",
+      "title": "Exposition Van Gogh",
+      "description": "Exposition immersive des œuvres de Van Gogh.",
+      "type": "event",
+      "date": "2024-09-01",
+      "createdBy": "usr_018",
+      "participants": ["usr_019", "usr_020"],
+      "location": "Amsterdam, Pays-Bas",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://wanted.com/events/van_gogh.jpg"
+        }
+      ],
+      "comments": ["J'adore Van Gogh !", "Je veux voir ça en vrai"],
+      "reactions": {
+        "like": 2400,
+        "support": 1900
+      },
+      "visibility": "public",
+      "status": "active",
+      "hashtags": ["#art", "#vangogh"],
+      "documents": [],
+      "tags": ["usr_021"],
+      "linkedLiveSessions": []
+    },
+    {
+      "id": "evt_008",
+      "title": "Web3 & Blockchain Summit",
+      "description": "Conférence sur l'impact du Web3 et de la blockchain.",
+      "type": "event",
+      "date": "2024-11-05",
+      "createdBy": "usr_022",
+      "participants": ["usr_023", "usr_024"],
+      "location": "Singapour",
+      "media": [],
+      "comments": ["Blockchain est l'avenir !", "Beaucoup à apprendre"],
+      "reactions": {
+        "like": 5300,
+        "support": 4200
+      },
+      "visibility": "private",
+      "status": "scheduled",
+      "hashtags": ["#blockchain", "#web3"],
+      "documents": ["https://wanted.com/docs/web3_summit.pdf"],
+      "tags": [],
+      "linkedLiveSessions": ["live_005"]
+    },
+    {
+      "id": "evt_009",
+      "title": "Festival de Cannes 2024",
+      "description": "La 77e édition du Festival de Cannes.",
+      "type": "event",
+      "date": "2024-05-14",
+      "createdBy": "usr_025",
+      "participants": ["usr_026", "usr_027"],
+      "location": "Cannes, France",
+      "media": [],
+      "comments": ["Qui sera la palme d'or ?", "J'espère voir mon film favori"],
+      "reactions": {
+        "like": 8400,
+        "support": 7200
+      },
+      "visibility": "public",
+      "status": "active",
+      "hashtags": ["#cinéma", "#festival"],
+      "documents": [],
+      "tags": ["usr_028"],
+      "linkedLiveSessions": []
+    }
+  ]
+}

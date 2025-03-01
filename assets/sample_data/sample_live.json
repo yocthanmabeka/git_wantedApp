@@ -1,0 +1,189 @@
+{
+  "lives": [
+    {
+      "id": "live_001",
+      "title": "Hommage à John Doe",
+      "description": "Une cérémonie en direct pour honorer la mémoire de John Doe.",
+      "hostId": "usr_001",
+      "eventId": "evt_003",
+      "status": "active",
+      "viewers": 1250,
+      "participants": ["usr_002", "usr_003", "usr_004"],
+      "start_time": "2024-04-01T18:00:00Z",
+      "end_time": null,
+      "duration": null,
+      "visibility": "public",
+      "streamUrl": "https://wanted.com/stream/live_001",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://wanted.com/lives/john_doe_hommage.jpg"
+        }
+      ],
+      "linkedMemorial": "mem_001"
+    },
+    {
+      "id": "live_002",
+      "title": "Célébration de Marie Curie",
+      "description": "Un direct spécial pour honorer l’héritage scientifique de Marie Curie.",
+      "hostId": "usr_005",
+      "eventId": "evt_002",
+      "status": "scheduled",
+      "viewers": 1800,
+      "participants": ["usr_006", "usr_007"],
+      "start_time": "2024-05-01T20:00:00Z",
+      "end_time": null,
+      "duration": null,
+      "visibility": "public",
+      "streamUrl": "https://wanted.com/stream/live_002",
+      "media": [
+        {
+          "type": "image",
+          "url": "https://wanted.com/lives/marie_curie.jpg"
+        }
+      ],
+      "linkedMemorial": "mem_002"
+    },
+    {
+      "id": "live_003",
+      "title": "Réunion de famille pour Alan Turing",
+      "description": "Une discussion en direct avec des historiens et la famille d'Alan Turing.",
+      "hostId": "usr_008",
+      "eventId": "evt_004",
+      "status": "ended",
+      "viewers": 2200,
+      "participants": ["usr_009", "usr_010"],
+      "start_time": "2024-02-15T17:00:00Z",
+      "end_time": "2024-02-15T19:00:00Z",
+      "duration": "2h",
+      "visibility": "private",
+      "streamUrl": "https://wanted.com/stream/live_003",
+      "media": [
+        {
+          "type": "video",
+          "url": "https://wanted.com/lives/turing_replay.mp4"
+        }
+      ],
+      "linkedMemorial": "mem_003"
+    },
+    {
+      "id": "live_004",
+      "title": "Mémoire de Nelson Mandela",
+      "description": "Cérémonie en l'honneur de Mandela.",
+      "hostId": "usr_011",
+      "eventId": "evt_005",
+      "status": "active",
+      "viewers": 5000,
+      "participants": ["usr_012", "usr_013"],
+      "start_time": "2024-06-01T15:00:00Z",
+      "end_time": null,
+      "duration": null,
+      "visibility": "public",
+      "streamUrl": "https://wanted.com/stream/live_004",
+      "media": [],
+      "linkedMemorial": "mem_004"
+    },
+    {
+      "id": "live_005",
+      "title": "Hommage aux victimes du séisme",
+      "description": "Un direct de solidarité pour aider les familles touchées.",
+      "hostId": "usr_014",
+      "eventId": "evt_006",
+      "status": "live",
+      "viewers": 7000,
+      "participants": ["usr_015", "usr_016"],
+      "start_time": "2024-06-10T18:00:00Z",
+      "end_time": null,
+      "duration": null,
+      "visibility": "public",
+      "streamUrl": "https://wanted.com/stream/live_005",
+      "media": [],
+      "linkedMemorial": "mem_005"
+    },
+    {
+      "id": "live_006",
+      "title": "Discussion sur l’héritage de Stephen Hawking",
+      "description": "Table ronde avec des scientifiques renommés.",
+      "hostId": "usr_017",
+      "eventId": "evt_007",
+      "status": "scheduled",
+      "viewers": 3000,
+      "participants": ["usr_018", "usr_019"],
+      "start_time": "2024-07-15T19:00:00Z",
+      "end_time": null,
+      "duration": null,
+      "visibility": "public",
+      "streamUrl": "https://wanted.com/stream/live_006",
+      "media": [],
+      "linkedMemorial": "mem_006"
+    },
+    {
+      "id": "live_007",
+      "title": "Cérémonie de la paix",
+      "description": "Événement mondial pour promouvoir la paix.",
+      "hostId": "usr_020",
+      "eventId": "evt_008",
+      "status": "live",
+      "viewers": 9500,
+      "participants": ["usr_021", "usr_022"],
+      "start_time": "2024-07-20T18:30:00Z",
+      "end_time": null,
+      "duration": null,
+      "visibility": "public",
+      "streamUrl": "https://wanted.com/stream/live_007",
+      "media": [],
+      "linkedMemorial": "mem_007"
+    },
+    {
+      "id": "live_008",
+      "title": "Hommage aux héros de la santé",
+      "description": "Célébration des travailleurs médicaux et bénévoles.",
+      "hostId": "usr_023",
+      "eventId": "evt_009",
+      "status": "active",
+      "viewers": 4000,
+      "participants": ["usr_024", "usr_025"],
+      "start_time": "2024-08-05T20:00:00Z",
+      "end_time": null,
+      "duration": null,
+      "visibility": "public",
+      "streamUrl": "https://wanted.com/stream/live_008",
+      "media": [],
+      "linkedMemorial": "mem_008"
+    },
+    {
+      "id": "live_009",
+      "title": "Mémoire d’Anne Frank",
+      "description": "Lecture et discussion autour de son journal.",
+      "hostId": "usr_026",
+      "eventId": "evt_010",
+      "status": "scheduled",
+      "viewers": 2800,
+      "participants": ["usr_027", "usr_028"],
+      "start_time": "2024-09-01T17:00:00Z",
+      "end_time": null,
+      "duration": null,
+      "visibility": "public",
+      "streamUrl": "https://wanted.com/stream/live_009",
+      "media": [],
+      "linkedMemorial": "mem_009"
+    },
+    {
+      "id": "live_010",
+      "title": "Cérémonie du souvenir des vétérans",
+      "description": "Hommage aux anciens combattants.",
+      "hostId": "usr_029",
+      "eventId": "evt_011",
+      "status": "active",
+      "viewers": 6300,
+      "participants": ["usr_030", "usr_031"],
+      "start_time": "2024-10-15T14:00:00Z",
+      "end_time": null,
+      "duration": null,
+      "visibility": "public",
+      "streamUrl": "https://wanted.com/stream/live_010",
+      "media": [],
+      "linkedMemorial": "mem_010"
+    }
+  ]
+}

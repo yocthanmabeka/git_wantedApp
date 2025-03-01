@@ -1,0 +1,199 @@
+{
+    "activities": [
+      {
+        "type": "commemoration",
+        "hashtag": "#Commemoration",
+        "user": {
+          "id": "u1",
+          "username": "JohnDoe",
+          "profilePicture": "https://wanted.com/profiles/u1.jpg"
+        },
+        "description": "Hommage à John Doe, un père et un ami exceptionnel.",
+        "media": [
+          {
+            "url": "https://wanted.com/memorials/john_doe.jpg",
+            "type": "image"
+          }
+        ],
+        "actions": {
+          "like": 120,
+          "comment": 45,
+          "share": 30
+        },
+        "memorial": {
+          "id": "mem_001",
+          "name": "John Doe",
+          "tributeMessage": "Un père et un ami exceptionnel. Toujours dans nos cœurs."
+        }
+      },
+      {
+        "type": "event_participation",
+        "user": {
+          "id": "u5",
+          "username": "ElonMusk",
+          "profilePicture": "https://wanted.com/profiles/u5.jpg"
+        },
+        "event": {
+          "id": "evt_006",
+          "title": "Concert hommage à Freddie Mercury",
+          "location": "Londres, Royaume-Uni",
+          "date": "2024-07-15"
+        },
+        "message": "Elon Musk a rejoint l'événement : Concert hommage à Freddie Mercury."
+      },
+      {
+        "type": "live_notification",
+        "user": {
+          "id": "u6",
+          "username": "MarieCurie",
+          "profilePicture": "https://wanted.com/profiles/u6.jpg"
+        },
+        "live": {
+          "id": "live_002",
+          "title": "Célébration de Marie Curie",
+          "streamUrl": "https://wanted.com/stream/live_002",
+          "start_time": "2024-05-01T20:00:00Z"
+        },
+        "message": "Le live en hommage à Marie Curie commence bientôt !"
+      },
+      {
+        "type": "commemoration",
+        "hashtag": "#HommageScientifique",
+        "user": {
+          "id": "u7",
+          "username": "IsaacNewton",
+          "profilePicture": "https://wanted.com/profiles/u7.jpg"
+        },
+        "description": "Hommage à Isaac Newton, l'un des plus grands scientifiques de l'histoire.",
+        "media": [
+          {
+            "url": "https://wanted.com/memorials/isaac_newton.jpg",
+            "type": "image"
+          }
+        ],
+        "actions": {
+          "like": 90,
+          "comment": 25,
+          "share": 40
+        },
+        "memorial": {
+          "id": "mem_002",
+          "name": "Isaac Newton",
+          "tributeMessage": "Le génie derrière la gravité et bien plus encore."
+        }
+      },
+      {
+        "type": "event_participation",
+        "user": {
+          "id": "u8",
+          "username": "NikolaTesla",
+          "profilePicture": "https://wanted.com/profiles/u8.jpg"
+        },
+        "event": {
+          "id": "evt_009",
+          "title": "Conférence sur l'héritage de Nikola Tesla",
+          "location": "Belgrade, Serbie",
+          "date": "2024-09-25"
+        },
+        "message": "Nikola Tesla a rejoint l'événement : Conférence sur son héritage technologique."
+      },
+      {
+        "type": "live_notification",
+        "user": {
+          "id": "u9",
+          "username": "RosaParks",
+          "profilePicture": "https://wanted.com/profiles/u9.jpg"
+        },
+        "live": {
+          "id": "live_004",
+          "title": "Célébration du courage de Rosa Parks",
+          "streamUrl": "https://wanted.com/stream/live_004",
+          "start_time": "2024-12-01T18:00:00Z"
+        },
+        "message": "Le live en hommage à Rosa Parks commence bientôt !"
+      },
+      {
+        "type": "commemoration",
+        "hashtag": "#HommageInformatique",
+        "user": {
+          "id": "u10",
+          "username": "AlanTuring",
+          "profilePicture": "https://wanted.com/profiles/u10.jpg"
+        },
+        "description": "Hommage à Alan Turing, pionnier de l'informatique moderne.",
+        "media": [
+          {
+            "url": "https://wanted.com/memorials/alan_turing.jpg",
+            "type": "image"
+          }
+        ],
+        "actions": {
+          "like": 150,
+          "comment": 60,
+          "share": 45
+        },
+        "memorial": {
+          "id": "mem_003",
+          "name": "Alan Turing",
+          "tributeMessage": "L'homme qui a brisé Enigma et révolutionné l'informatique."
+        }
+      },
+      {
+        "type": "event_participation",
+        "user": {
+          "id": "u11",
+          "username": "StephenHawking",
+          "profilePicture": "https://wanted.com/profiles/u11.jpg"
+        },
+        "event": {
+          "id": "evt_011",
+          "title": "Discussion cosmologique en hommage à Stephen Hawking",
+          "location": "Cambridge, Royaume-Uni",
+          "date": "2024-06-14"
+        },
+        "message": "Stephen Hawking a rejoint l'événement : Discussion cosmologique en son honneur."
+      },
+      {
+        "type": "live_notification",
+        "user": {
+          "id": "u12",
+          "username": "NelsonMandela",
+          "profilePicture": "https://wanted.com/profiles/u12.jpg"
+        },
+        "live": {
+          "id": "live_005",
+          "title": "Live sur l'héritage de Nelson Mandela",
+          "streamUrl": "https://wanted.com/stream/live_005",
+          "start_time": "2024-08-18T19:30:00Z"
+        },
+        "message": "Le live en hommage à Nelson Mandela commence bientôt !"
+      },
+      {
+        "type": "commemoration",
+        "hashtag": "#LéonardDeVinci",
+        "user": {
+          "id": "u13",
+          "username": "LeonardoDaVinci",
+          "profilePicture": "https://wanted.com/profiles/u13.jpg"
+        },
+        "description": "Hommage à Léonard de Vinci, génie universel de l'art et de la science.",
+        "media": [
+          {
+            "url": "https://wanted.com/memorials/leonardo_da_vinci.jpg",
+            "type": "image"
+          }
+        ],
+        "actions": {
+          "like": 180,
+          "comment": 75,
+          "share": 55
+        },
+        "memorial": {
+          "id": "mem_004",
+          "name": "Leonardo da Vinci",
+          "tributeMessage": "Un génie intemporel, maître de l'art et de l'innovation."
+        }
+      }
+    ]
+  }
+  
