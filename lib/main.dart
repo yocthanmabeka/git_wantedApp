@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:wanted/wanted_view.dart';
-//import 'package:wanted/wanted_view.dart';
-//aimport 'package:wanted/component/defaultTheme.dart';
 
 void main() {
   // Starting point of the application

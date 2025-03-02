@@ -58,8 +58,16 @@ class _CreateScreenState extends State<CreateScreen> {
     "Riche & Puissant": false,
     "Mort en Masse": false,
   };
+  String _selectedEventType = "Post"; // Valeur par défaut
 
-  String _selectedEventType = "Post";
+  void _cycleEventType() {
+    setState(() {
+      int currentIndex = eventTypes.indexOf(_selectedEventType);
+      int nextIndex =
+          (currentIndex + 1) % eventTypes.length; // Passer au suivant en boucle
+      _selectedEventType = eventTypes[nextIndex];
+    });
+  }
 
   void _showAccessGridView() {
     showModalBottomSheet(
@@ -336,7 +344,8 @@ class _CreateScreenState extends State<CreateScreen> {
                           ),
                           IconButton(
                             icon: const Icon(Icons.tag_rounded),
-                            onPressed: () {},
+                            onPressed:
+                                _cycleEventType, // Change le type d'événement au clic
                           ),
                         ],
                       ),
@@ -769,8 +778,6 @@ class _CreateScreenState extends State<CreateScreen> {
           ],
         ),
         const SizedBox(height: 10),
-        const Text("6️⃣ Participants et Accès",
-            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
         const Text(
             "Livre d’or numérique (chacun peut laisser un message ou une anecdote)",
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
@@ -799,7 +806,7 @@ class _CreateScreenState extends State<CreateScreen> {
           ],
         ),
         const SizedBox(height: 10),
-        const Text("7 Tarification & Accès Premium",
+        const Text("6️⃣ Tarification & Accès Premium",
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
         const Text("Activer la contribution au deuil ?",
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
@@ -1153,7 +1160,7 @@ class _CreateScreenState extends State<CreateScreen> {
                 const InputDecoration(labelText: "Lieu de commémoration")),
         const SizedBox(height: 10),
         const Text("6️⃣ Personnalisation et Activités",
-            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),        
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
         const Text(
             "Livre d’or numérique (chacun peut laisser un message ou une anecdote)",
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),

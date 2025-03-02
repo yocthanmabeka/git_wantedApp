@@ -89,10 +89,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       children: [
                         // **Placeholder for an image**
                         // Uncomment and replace with actual image asset or network URL
-                        // Image.network(
-                        //   data["image"]!,
-                        //   height: 250,
-                        // ),
+                        Image.network(
+                          data["image"]!,
+                          height: 250,
+                        ),
                         const SizedBox(height: 32),
 
                         /// **Title**

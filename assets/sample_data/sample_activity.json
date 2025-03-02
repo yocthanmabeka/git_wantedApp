@@ -6,12 +6,12 @@
         "user": {
           "id": "u1",
           "username": "JohnDoe",
-          "profilePicture": "https://wanted.com/profiles/u1.jpg"
+          "profilePicture": "wanted/assets/medias/"
         },
         "description": "Hommage à John Doe, un père et un ami exceptionnel.",
         "media": [
           {
-            "url": "https://wanted.com/memorials/john_doe.jpg",
+            "url": "wanted/assets/medias/",
             "type": "image"
           }
         ],
@@ -31,7 +31,7 @@
         "user": {
           "id": "u5",
           "username": "ElonMusk",
-          "profilePicture": "https://wanted.com/profiles/u5.jpg"
+          "profilePicture": "wanted/assets/medias/"
         },
         "event": {
           "id": "evt_006",
@@ -46,7 +46,7 @@
         "user": {
           "id": "u6",
           "username": "MarieCurie",
-          "profilePicture": "https://wanted.com/profiles/u6.jpg"
+          "profilePicture": "wanted/assets/medias/"
         },
         "live": {
           "id": "live_002",
@@ -62,12 +62,12 @@
         "user": {
           "id": "u7",
           "username": "IsaacNewton",
-          "profilePicture": "https://wanted.com/profiles/u7.jpg"
+          "profilePicture": "wanted/assets/medias/"
         },
         "description": "Hommage à Isaac Newton, l'un des plus grands scientifiques de l'histoire.",
         "media": [
           {
-            "url": "https://wanted.com/memorials/isaac_newton.jpg",
+            "url": "wanted/assets/medias/",
             "type": "image"
           }
         ],
@@ -87,7 +87,7 @@
         "user": {
           "id": "u8",
           "username": "NikolaTesla",
-          "profilePicture": "https://wanted.com/profiles/u8.jpg"
+          "profilePicture": "wanted/assets/medias/"
         },
         "event": {
           "id": "evt_009",
@@ -102,7 +102,7 @@
         "user": {
           "id": "u9",
           "username": "RosaParks",
-          "profilePicture": "https://wanted.com/profiles/u9.jpg"
+          "profilePicture": "wanted/assets/medias/"
         },
         "live": {
           "id": "live_004",
@@ -118,12 +118,12 @@
         "user": {
           "id": "u10",
           "username": "AlanTuring",
-          "profilePicture": "https://wanted.com/profiles/u10.jpg"
+          "profilePicture": "wanted/assets/medias/"
         },
         "description": "Hommage à Alan Turing, pionnier de l'informatique moderne.",
         "media": [
           {
-            "url": "https://wanted.com/memorials/alan_turing.jpg",
+            "url": "wanted/assets/medias/",
             "type": "image"
           }
         ],
@@ -143,7 +143,7 @@
         "user": {
           "id": "u11",
           "username": "StephenHawking",
-          "profilePicture": "https://wanted.com/profiles/u11.jpg"
+          "profilePicture": "wanted/assets/medias/"
         },
         "event": {
           "id": "evt_011",
@@ -158,12 +158,12 @@
         "user": {
           "id": "u12",
           "username": "NelsonMandela",
-          "profilePicture": "https://wanted.com/profiles/u12.jpg"
+          "profilePicture": "wanted/assets/medias/"
         },
         "live": {
           "id": "live_005",
           "title": "Live sur l'héritage de Nelson Mandela",
-          "streamUrl": "https://wanted.com/stream/live_005",
+          "streamUrl": "wanted/assets/medias/",
           "start_time": "2024-08-18T19:30:00Z"
         },
         "message": "Le live en hommage à Nelson Mandela commence bientôt !"
@@ -174,12 +174,12 @@
         "user": {
           "id": "u13",
           "username": "LeonardoDaVinci",
-          "profilePicture": "https://wanted.com/profiles/u13.jpg"
+          "profilePicture": "wanted/assets/medias/"
         },
         "description": "Hommage à Léonard de Vinci, génie universel de l'art et de la science.",
         "media": [
           {
-            "url": "https://wanted.com/memorials/leonardo_da_vinci.jpg",
+            "url": "wanted/assets/medias/",
             "type": "image"
           }
         ],
