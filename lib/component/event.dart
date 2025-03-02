@@ -44,7 +44,7 @@ class EventCard extends StatelessWidget {
               Column(children: [
                 _buildMediaSection(context),
                 _buildActionButtons(),
-                _buildTitle(),
+                _buildType(),
                 _buildDescription(context),
                 _buildMainActionButton(context),
                 _buildParticipants(),
@@ -142,13 +142,13 @@ class EventCard extends StatelessWidget {
   }
 
   /// ✅ **Displays the Event Title**
-  Widget _buildTitle() {
+  Widget _buildType() {
     return Container(
       margin: const EdgeInsets.only(right: 16),
       constraints: const BoxConstraints.expand(width: 300, height: 35),
       child: TextButton(
         onPressed: () {},
-        child: Text(event.title.isNotEmpty ? event.title : 'Sans titre'),
+        child: Text(event.type.isNotEmpty ? event.type : 'Sans titre'),
       ),
     );
   }
@@ -228,7 +228,7 @@ class EventCard extends StatelessWidget {
             context,
             MaterialPageRoute(
               builder: (context) =>
-                  EventCommemorationScreen(event: event, creator: creator),
+                  EventGriefScreen(event: event, creator: creator),
             ),
           );
         },

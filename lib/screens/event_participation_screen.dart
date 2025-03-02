@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wanted/component/payment_page.dart';
 import 'package:wanted/models/event_model.dart';
 import 'package:wanted/models/user_model.dart';
 
@@ -39,8 +40,10 @@ class EventGriefScreen extends StatelessWidget {
             _buildCeremonyDetails(), // ✅ Détails de la cérémonie
             _buildCustomizationAndRituals(), // ✅ Personnalisation et rituels
             _buildParticipantsAndAccess(), // ✅ Participants et Accès
+            _buildCommemorationCreation(),
             _buildMemorialTribute(), // ✅ Hommage
-            _buildCondolenceBook(), // ✅ Contribution
+            _buildCondolenceBook(),
+            _buildContribution(context), // ✅ Contribution
           ],
         ),
       ),
@@ -220,26 +223,92 @@ class EventGriefScreen extends StatelessWidget {
     );
   }
 
-  /// ✅ **8️⃣ Contribution**
+  Widget _buildCommemorationCreation() {
+    return Padding(
+      padding: const EdgeInsets.all(16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text("Créer une commémoration",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white)),
+          ElevatedButton.icon(
+            onPressed: () {
+              // TODO: Naviguer vers la création du mémorial
+            },
+            icon: const Icon(Icons.add, color: Colors.white),
+            label: const Text("Créer une commémoration"),
+            style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// ✅ **Livre d'or pour messages de condoléances**
   Widget _buildCondolenceBook() {
     return Padding(
       padding: const EdgeInsets.all(16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text("Contribution",
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white)),
-          ElevatedButton(
-            onPressed: () {
-              // TODO: Ajouter une contribution
-            },
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.greenAccent),
-            child: const Text("Contribuer"),
+          const Text(
+            "Mettre des hommages",
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+          ),
+          const SizedBox(height: 8),
+          Container(
+            padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              color: Colors.white12,
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Column(
+              children: [
+                TextField(
+                  style: const TextStyle(color: Colors.white),
+                  decoration: const InputDecoration(
+                    hintText: "Écrivez un message en hommage...",
+                    hintStyle: TextStyle(color: Colors.white54),
+                    border: InputBorder.none,
+                  ),
+                  maxLines: 3,
+                ),
+                const SizedBox(height: 8),
+                ElevatedButton(
+                  onPressed: () {
+                    // TODO: Ajouter le message au livre d'or
+                  },
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.blueAccent),
+                  child: const Text("Envoyer"),
+                ),
+              ],
+            ),
           ),
         ],
       ),
     );
   }
+
+  /// ✅ ** Contribution**
+  Widget _buildContribution(BuildContext context) {
+  return Padding(
+    padding: const EdgeInsets.all(16),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        ElevatedButton(
+          onPressed: () {
+            // ✅ Correction : context est maintenant disponible
+            Navigator.push(context, MaterialPageRoute(builder: (context) => PaymentPage()));
+          },
+          style: ElevatedButton.styleFrom(backgroundColor: Colors.greenAccent),
+          child: const Text("Contribuer"),
+        ),
+      ],
+    ),
+  );
+}
+
 }
 
 class EventCommemorationScreen extends StatelessWidget {
@@ -282,7 +351,8 @@ class EventCommemorationScreen extends StatelessWidget {
             _buildCustomizationAndActivities(), // ✅ Personnalisation et Activités
             _buildMemorialCreation(), // ✅ Exposition ou Création du Mémorial
             _buildMemorialTribute(), // ✅ Hommage
-            _buildCondolenceBook(), // ✅ Contribution
+            _buildCondolenceBook(),
+            _buildContribution(context), // ✅ Contribution
           ],
         ),
       ),
@@ -495,25 +565,70 @@ class EventCommemorationScreen extends StatelessWidget {
       ),
     );
   }
+  /// ✅ **Livre d'or pour messages de condoléances**
   Widget _buildCondolenceBook() {
     return Padding(
       padding: const EdgeInsets.all(16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text("Contribution",
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white)),
-          ElevatedButton(
-            onPressed: () {
-              // TODO: Ajouter une contribution
-            },
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.greenAccent),
-            child: const Text("Contribuer"),
+          const Text(
+            "Mettre des hommages",
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+          ),
+          const SizedBox(height: 8),
+          Container(
+            padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              color: Colors.white12,
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Column(
+              children: [
+                TextField(
+                  style: const TextStyle(color: Colors.white),
+                  decoration: const InputDecoration(
+                    hintText: "Écrivez un message en hommage...",
+                    hintStyle: TextStyle(color: Colors.white54),
+                    border: InputBorder.none,
+                  ),
+                  maxLines: 3,
+                ),
+                const SizedBox(height: 8),
+                ElevatedButton(
+                  onPressed: () {
+                    // TODO: Ajouter le message au livre d'or
+                  },
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.blueAccent),
+                  child: const Text("Envoyer"),
+                ),
+              ],
+            ),
           ),
         ],
       ),
     );
   }
+
+  /// ✅ ** Contribution**
+  Widget _buildContribution(BuildContext context) {
+  return Padding(
+    padding: const EdgeInsets.all(16),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        ElevatedButton(
+          onPressed: () {
+            // ✅ Correction : context est maintenant disponible
+            Navigator.push(context, MaterialPageRoute(builder: (context) => PaymentPage()));
+          },
+          style: ElevatedButton.styleFrom(backgroundColor: Colors.greenAccent),
+          child: const Text("Contribuer"),
+        ),
+      ],
+    ),
+  );
+}
 }
 
 
