@@ -18,7 +18,7 @@
       "media": [
         {
           "type": "image",
-          "url": "wanted/assets/medias/1"
+          "url": "assets/medias/want0.jpg"
         }
       ],
       "comments": ["C'est un événement important !", "J'y participerai"],
@@ -60,7 +60,7 @@
       "media": [
         {
           "type": "image",
-          "url": "wanted/assets/medias/2"
+          "url": "assets/medias/want4.jpg"
         },
         {
           "type": "video",
@@ -117,7 +117,7 @@
       "media": [
         {
           "type": "image",
-          "url": "wanted/assets/medias/3"
+          "url": "assets/medias/want2.jpg"
         },
         {
           "type": "video",

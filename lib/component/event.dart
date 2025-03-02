@@ -100,46 +100,50 @@ class EventCard extends StatelessWidget {
 
   /// ✅ **Displays the Event Media Section**
   Widget _buildMediaSection(BuildContext context) {
-    if (event.media.isNotEmpty) {
-      String? mediaUrl = event.media.first["url"];
-      String? mediaType = event.media.first["type"];
+  if (event.media.isNotEmpty) {
+    String? mediaUrl = event.media.first["url"];
+    String? mediaType = event.media.first["type"];
 
-      return GestureDetector(
-        onTap: () {
-          // ✅ Navigate to full media gallery
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => MediaGalleryScreen(mediaList: event.media),
-            ),
-          );
-        },
-        child: Container(
-          margin: const EdgeInsets.only(bottom: 5, right: 16, left: 20),
-          constraints: const BoxConstraints.expand(width: 300, height: 375),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10),
-            image: mediaType == 'image'
-                ? DecorationImage(
-                    image: NetworkImage(mediaUrl!), fit: BoxFit.cover)
-                : null,
+    return GestureDetector(
+      onTap: () {
+        // ✅ Naviguer vers la galerie de médias
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => MediaGalleryScreen(mediaList: event.media),
           ),
-          child: mediaType == 'video'
-              ? const Center(
-                  child: Icon(Icons.play_circle_fill,
-                      size: 50, color: Colors.white))
+        );
+      },
+      child: Container(
+        margin: const EdgeInsets.only(bottom: 5, right: 16, left: 20),
+        constraints: const BoxConstraints.expand(width: 300, height: 375),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          image: mediaType == 'image'
+              ? (mediaUrl!.startsWith("assets/")
+                  ? DecorationImage(
+                      image: AssetImage(mediaUrl), fit: BoxFit.cover)
+                  : DecorationImage(
+                      image: NetworkImage(mediaUrl), fit: BoxFit.cover))
               : null,
         ),
-      );
-    } else {
-      return Container(
-        margin: const EdgeInsets.only(bottom: 5, right: 16),
-        constraints: const BoxConstraints.expand(width: 330, height: 350),
-        color: Colors.grey[300],
-        child: const Center(child: Text('Aucun média disponible')),
-      );
-    }
+        child: mediaType == 'video'
+            ? const Center(
+                child: Icon(Icons.play_circle_fill,
+                    size: 50, color: Colors.white))
+            : null,
+      ),
+    );
+  } else {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 5, right: 16),
+      constraints: const BoxConstraints.expand(width: 330, height: 350),
+      color: Colors.grey[300],
+      child: const Center(child: Text('Aucun média disponible')),
+    );
   }
+}
+
 
   /// ✅ **Displays the Event Title**
   Widget _buildType() {
@@ -298,9 +302,13 @@ class MediaGalleryScreen extends StatelessWidget {
         itemCount: mediaList.length,
         itemBuilder: (context, index) {
           String mediaUrl = mediaList[index]["url"]!;
+          bool isAsset = mediaUrl.startsWith("assets/");
+
           return GestureDetector(
             onTap: () {},
-            child: Image.network(mediaUrl, fit: BoxFit.cover),
+            child: isAsset
+                ? Image.asset(mediaUrl, fit: BoxFit.cover)
+                : Image.network(mediaUrl, fit: BoxFit.cover),
           );
         },
       ),
