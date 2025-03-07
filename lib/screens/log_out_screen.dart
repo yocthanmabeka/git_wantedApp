@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// This screen informs the user that they have been logged out and provides
 /// an option to navigate back to the sign-in screen.
 class LogoutScreen extends StatelessWidget {
-  const LogoutScreen({Key? key}) : super(key: key);
+  const LogoutScreen({super.key});
 
   /// Navigates the user to the SignInScreen.
   /// Uses `Navigator.pushReplacementNamed` to replace the current screen

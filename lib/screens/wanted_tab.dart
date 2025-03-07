@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:provider/provider.dart';
+import 'package:wanted/component/component.dart';
 import 'package:wanted/screens/screens.dart';
 
 /// The main navigation tab for the Wanted app.
@@ -63,7 +65,8 @@ class _WantedTabState extends State<WantedTab> with SingleTickerProviderStateMix
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Consumer<WantedTabProvider>(builder: (context, wantedTabmanager, child) {
+      return Scaffold(
       // Custom app bar with search functionality
       appBar: WantedAppBar(
         isSearching: isSearching,
@@ -99,6 +102,7 @@ class _WantedTabState extends State<WantedTab> with SingleTickerProviderStateMix
         ],
       ),
     );
+    });
   }
 }
 

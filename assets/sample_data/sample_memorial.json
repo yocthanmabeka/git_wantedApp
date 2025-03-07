@@ -26,7 +26,7 @@
       "media": [
         {
           "type": "image",
-          "url": "https://wanted.com/memorials/john_doe.jpg"
+          "url": "assets/medias/want0.jpg"
         },
         {
           "type": "image",
@@ -59,7 +59,7 @@
       "media": [
         {
           "type": "image",
-          "url": "https://wanted.com/memorials/marie_curie.jpg"
+          "url": "assets/medias/want4.jpg"
         }
       ],
       "documents": [],
@@ -86,7 +86,7 @@
       "media": [
         {
           "type": "image",
-          "url": "https://wanted.com/memorials/alan_turing.jpg"
+          "url": "assets/medias/want2.jpg"
         }
       ],
       "documents": ["https://wanted.com/memorials/alan_turing_legacy.pdf"],
@@ -113,7 +113,7 @@
       "media": [
         {
           "type": "image",
-          "url": "https://wanted.com/memorials/mandela.jpg"
+          "url": "assets/medias/want3.jpg"
         }
       ],
       "documents": [],
@@ -140,7 +140,7 @@
       "media": [
         {
           "type": "image",
-          "url": "https://wanted.com/memorials/einstein.jpg"
+          "url": "assets/medias/want0.jpg"
         }
       ],
       "documents": ["https://wanted.com/memorials/einstein_research.pdf"],
@@ -167,7 +167,7 @@
       "media": [
         {
           "type": "image",
-          "url": "https://wanted.com/memorials/rosa_parks.jpg"
+          "url": "assets/medias/want4.jpg"
         }
       ],
       "documents": [],
@@ -194,7 +194,7 @@
       "media": [
         {
           "type": "image",
-          "url": "https://wanted.com/memorials/mlk.jpg"
+          "url": "assets/medias/want3.jpg"
         }
       ],
       "documents": [],

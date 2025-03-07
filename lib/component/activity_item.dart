@@ -141,44 +141,45 @@ class ActivityItem extends StatelessWidget {
   }
 
   Widget _buildMediaPreview() {
-    return Stack(
-      alignment: Alignment.center,
-      children: [
-        Container(
-          height: 110,
-          width: 100,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(8),
-            color: Colors.grey[400],
-            image: DecorationImage(
-              image: NetworkImage(activity.media![0].url),
-              fit: BoxFit.cover,
+  return Stack(
+    alignment: Alignment.center,
+    children: [
+      Container(
+        height: 110,
+        width: 100,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(8),
+          color: Colors.grey[400],
+          image: DecorationImage(
+            image: AssetImage(activity.media!.first.url), // ✅ Correct
+            fit: BoxFit.cover,
+          ),
+        ),
+      ),
+      if (activity.media!.length > 1)
+        Positioned(
+          bottom: 5,
+          right: 5,
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+            decoration: BoxDecoration(
+              color: Colors.black54,
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: Text(
+              "+${activity.media!.length - 1}",
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 12,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
         ),
-        if (activity.media!.length > 1)
-          Positioned(
-            bottom: 5,
-            right: 5,
-            child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-              decoration: BoxDecoration(
-                color: Colors.black54,
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Text(
-                "+${activity.media!.length - 1}",
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 12,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-          ),
-      ],
-    );
-  }
+    ],
+  );
+}
+
 
   Widget _interactionButton(IconData icon, int count) {
     return Row(

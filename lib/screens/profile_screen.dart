@@ -56,17 +56,23 @@ class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProvider
                 children: [
                   /// **Profile Banner**
                   Container(
-                    margin: const EdgeInsets.only(top: 50),
-                    height: 330,
-                    width: double.infinity,
-                    color: Colors.blue,
-                    child: const Center(
-                      child: Text(
-                        'Bingo',
-                        style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.white),
-                      ),
-                    ),
-                  ),
+  margin: const EdgeInsets.only(top: 50),
+  height: 330,
+  width: double.infinity,
+  decoration: BoxDecoration(
+    image: const DecorationImage(
+      image: AssetImage("assets/medias/want0.jpg"), // ✅ Remplace le fond par une image locale
+      fit: BoxFit.cover, // ✅ Ajuste l'image pour couvrir tout l'espace
+    ),
+  ),
+  child: const Center(
+    child: Text(
+      'Bingo',
+      style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.white),
+    ),
+  ),
+),
+
 
                   /// **Profile Action Buttons**
                   Padding(

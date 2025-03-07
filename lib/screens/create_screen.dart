@@ -28,7 +28,7 @@ class _CreateScreenState extends State<CreateScreen> {
   final bool _isPostingEnabled = false;
 
   final String _selectedCategory = "Historique"; // Valeur par défaut
-  final String _selectedCeremonyType = "Hommage privé";
+  
 
   final String _selectedRecurrence = "Annuel";
   final List<String> _selectedVideos = [];

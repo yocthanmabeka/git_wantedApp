@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:wanted/models/model.dart';
+
 import 'package:wanted/wanted_view.dart';
 
 void main() {
@@ -19,7 +22,17 @@ class WantedApp extends StatelessWidget {
       //Using the theme
       //theme: ThemeData.dark(),
       //Home of application
-      home: WantedView()
+      home: MultiProvider(
+        providers: [
+          ChangeNotifierProvider(create: (context) => WantedProvider()),
+          ChangeNotifierProvider(create: (context) => WantedTabProvider()),
+          ChangeNotifierProvider(create: (context) => EventManager()),
+          ChangeNotifierProvider(create: (context) => EventLiveProvider()),
+          ChangeNotifierProvider(create: (context) => MemorialProvider()),
+          ChangeNotifierProvider(create: (context) => ActivityProvider()),
+        ],
+        child: WantedView(),
+      )
     );
   }
 }

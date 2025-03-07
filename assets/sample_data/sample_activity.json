@@ -11,7 +11,7 @@
         "description": "Hommage à John Doe, un père et un ami exceptionnel.",
         "media": [
           {
-            "url": "wanted/assets/medias/",
+            "url": "assets/medias/want0.jpg",
             "type": "image"
           }
         ],
@@ -67,7 +67,7 @@
         "description": "Hommage à Isaac Newton, l'un des plus grands scientifiques de l'histoire.",
         "media": [
           {
-            "url": "wanted/assets/medias/",
+            "url": "assets/medias/want1.jpg",
             "type": "image"
           }
         ],
@@ -123,7 +123,7 @@
         "description": "Hommage à Alan Turing, pionnier de l'informatique moderne.",
         "media": [
           {
-            "url": "wanted/assets/medias/",
+            "url": "assets/medias/want2.jpg",
             "type": "image"
           }
         ],
@@ -179,7 +179,7 @@
         "description": "Hommage à Léonard de Vinci, génie universel de l'art et de la science.",
         "media": [
           {
-            "url": "wanted/assets/medias/",
+            "url": "assets/medias/want3.jpg",
             "type": "image"
           }
         ],

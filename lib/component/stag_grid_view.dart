@@ -44,17 +44,17 @@ class MemorialStaggeredGrid extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // ✅ Display memorial image (Uncomment if media is available)
-                // if (memorials.media.isNotEmpty)
-                //   ClipRRect(
-                //     borderRadius: const BorderRadius.vertical(top: Radius.circular(12)),
-                //     child: Image.network(
-                //       memorials.media.first.url, // ✅ Load the first image
-                //       width: double.infinity,
-                //       height: 100,
-                //       fit: BoxFit.cover,
-                //     ),
-                //   ),
+                //✅ Display memorial image (Uncomment if media is available)
+                if (memorials.media.isNotEmpty)
+                  ClipRRect(
+                    borderRadius: const BorderRadius.vertical(top: Radius.circular(12)),
+                    child: Image.asset(
+                      memorials.media.first.url, // ✅ Load the first image
+                      width: double.infinity,
+                      height: 100,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
 
                 // ✅ Display memorial name
                 Padding(

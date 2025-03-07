@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// This screen introduces new users to the Wanted app through a series of onboarding slides.
 /// It uses a `PageView` to navigate between different onboarding steps.
 class OnboardingScreen extends StatefulWidget {
-  const OnboardingScreen({Key? key}) : super(key: key);
+  const OnboardingScreen({super.key});
 
   @override
   State<OnboardingScreen> createState() => _OnboardingScreenState();

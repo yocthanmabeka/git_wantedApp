@@ -29,7 +29,7 @@ class MemorialDetailScreen extends StatelessWidget {
           children: [
             // ✅ Display first image from memorial media (if available)
             if (memorial.media.isNotEmpty)
-              Image.network(
+              Image.asset(
                 memorial.media.first.url,
                 width: double.infinity,
                 height: 650,
