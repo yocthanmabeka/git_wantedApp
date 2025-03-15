@@ -1,6 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:wanted/models/model.dart';
 
 class EventManager extends ChangeNotifier {
+  List<EventModel> _events = [];
+
+  List<EventModel> get events => _events;
+
+  void setEvents(List<EventModel> events) {
+    _events = events;
+    notifyListeners();
+  }
+
+  /// ✅ **Récupère un événement par son ID**
+  EventModel? getEventById(String? id) {
+    return _events.firstWhere(
+      (event) => event.id == id,
+      orElse: () => EventModel.defaultEvent(),
+    );
+}
+
   bool isExpanded = false;
   double lineHeight = 540;
   double baseHeight = 80;

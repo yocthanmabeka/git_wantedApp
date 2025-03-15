@@ -1,6 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:wanted/models/model.dart';
 
 class EventLiveProvider extends ChangeNotifier {
+   List<LiveModel> _liveEvents = [];
+
+  List<LiveModel> get liveEvents => _liveEvents;
+
+  void setLiveEvents(List<LiveModel> liveEvents) {
+    _liveEvents = liveEvents;
+    notifyListeners();
+  }
+
+  /// ✅ **Récupère un Live par son ID**
+  LiveModel? getLiveById(String? id) {
+    return _liveEvents.firstWhere((live) => live.id == id, orElse: LiveModel.defaultLive);
+  }
   int _viewersCount = 0; // Nombre de spectateurs
   List<String> _chatMessages = []; // Liste des messages du chat
   bool _isLive = true; // État du live

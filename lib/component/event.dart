@@ -50,9 +50,9 @@ class EventCard extends StatelessWidget {
                       Expanded(
                         child: Column(children: [
                           _buildMediaSection(context),
-                          _buildActionButtons(context),
                           _buildType(),
                           _buildDescription(context),
+                          _buildActionButtons(context),
                           _buildMainActionButton(context),
                           _buildParticipants(),
                         ]),

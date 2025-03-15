@@ -9,6 +9,7 @@ export 'memorial_screen.dart';
 export 'memorial_detail_screen.dart';
 export 'profile_screen.dart';
 export 'Wanted_tab.dart';
+export 'Wanted_view.dart';
 export 'Wanted_search_screen.dart';
 export 'sign_up_screen.dart';
 export 'sign_in_screen.dart';

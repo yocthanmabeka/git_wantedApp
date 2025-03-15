@@ -65,8 +65,7 @@ class _WantedTabState extends State<WantedTab> with SingleTickerProviderStateMix
 
   @override
   Widget build(BuildContext context) {
-    return Consumer<WantedTabProvider>(builder: (context, wantedTabmanager, child) {
-      return Scaffold(
+    return Scaffold(
       // Custom app bar with search functionality
       appBar: WantedAppBar(
         isSearching: isSearching,
@@ -102,7 +101,6 @@ class _WantedTabState extends State<WantedTab> with SingleTickerProviderStateMix
         ],
       ),
     );
-    });
   }
 }
 
